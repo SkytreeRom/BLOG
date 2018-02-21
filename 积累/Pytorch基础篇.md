@@ -1,4 +1,4 @@
-# Pytorch基础篇
+# Pytorch基础篇一
 ## Tensor用法与转换
 ### Tensor的创建
 ```
@@ -25,3 +25,8 @@ n3=n2.numpy()
 ```
 t=[torch.randn(5,5).cuda() if torch.cuda.is_available() else torch.randn(5,5)]
 ```
+# Variable and Gradients
+## Variable
+Variable是Pytorch中最核心的类，Variable中包含了data和grad等
+## Gradient
+若想计算Gradient，只需对最终的Variable执行`backward()`函数
