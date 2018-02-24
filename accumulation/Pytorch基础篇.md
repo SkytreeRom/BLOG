@@ -29,4 +29,7 @@ t=[torch.randn(5,5).cuda() if torch.cuda.is_available() else torch.randn(5,5)]
 ## Variable
 Variable是Pytorch中最核心的类，Variable中包含了data和grad等
 ## Gradient
-若想计算Gradient，只需对最终的Variable执行`backward()`函数
+若想计算Gradient，只需对最终的Variable执行`backward()`函数（需要先执行`net.zero_grad()`函数）  
+
+---
+`Feb 23th,2018`
